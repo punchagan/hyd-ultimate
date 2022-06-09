@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hyderabad Ultimate Frisbee Interest Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ultimate Frisbee in Hyderabad!</h1>
+
+      <p>We are trying to gauge interest for Ultimate Frisbee in Hyderabad and
+      checking if we can have regular practices, etc.</p>
+
+      <form
+        method="POST"
+        action="https://script.google.com/macros/s/AKfycbzssTgMFM_KKVWl5dA-jFBpFBVRQTAlmrbDCBCHqM0Nnq9zzB49HpvbP5f7rFPqjd-F/exec"
+        >
+
+        <div class="form-group row">
+          <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputName" placeholder="Name" name="Name" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="Email" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="inputMobile" class="col-sm-2 col-form-label">Mobile</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="inputMobile" placeholder="Mobile" name="Mobile" min="1000000000" max="9999999999" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="inputAddress" class="col-sm-2 col-form-label">Address</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputAddress" placeholder="Start Typing Address..." name="Address" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="inputLocation" class="col-sm-2 col-form-label">Location</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputLocation" placeholder="0,0" name="Location" required readonly>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-sm-2">I'm interested in playing ...</div>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1" name="Checkbox" value="cb1">
+              <label class="form-check-label" for="gridCheck1">
+                Pick-up games
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck2" name="Checkbox" value="cb2">
+              <label class="form-check-label" for="gridCheck2">
+                Competitively, the next NCS season
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck2" name="Checkbox" value="cb2">
+              <label class="form-check-label" for="gridCheck2">
+                Competitively, but can't commit for a season
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+    <script src="js/places.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjVr3t-JwUlNbrlkon9Xe3ToOySsSkj5s&callback=setupSearchBox&libraries=places">
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
