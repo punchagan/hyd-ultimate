@@ -1,0 +1,110 @@
+---
+form_action: "https://script.google.com/macros/s/AKfycbzssTgMFM_KKVWl5dA-jFBpFBVRQTAlmrbDCBCHqM0Nnq9zzB49HpvbP5f7rFPqjd-F/exec"
+title: Hyderabad Ultimate Frisbee!
+description: "We are trying to gauge interest for Ultimate Frisbee in Hyderabad and checking if we can have regular practices, etc."
+form_fields:
+  name:
+    type: text
+    required: true
+    min: 2
+
+  nick:
+    type: text
+    placeholder: "Ultimate Nickname (if any)"
+
+  gender:
+    type: radio
+    required: true
+    options:
+      - label: Female
+        value: female
+      - label: Male
+        value: male
+      - label: Other
+        value: other
+      - label: Prefer not to say
+        value: secret
+
+  email:
+    type: email
+    required: true
+
+  mobile:
+    type: number
+    required: true
+    min: 1_000_000_000
+    max: 10_000_000_000
+
+  locality:
+    type: text
+    required: true
+    placeholder: "Locality name for map co-ordinates..."
+
+  location:
+    type: text
+    required: true
+    readonly: true
+    placeholder: "Map co-ordinates"
+
+  distance:
+    type: number
+    required: true
+    label: "I can travel [x] km for weekly practices/games."
+    min: 0
+    max: 50
+
+  competitive:
+    label: "I would like to play..."
+    type: radio
+    required: true
+    options:
+      - label: Only Recreational Ultimate
+        value: recreational
+      - label: Only Competitive Ultimate
+        value: competitive
+      - label: Both Competitive & Recreational Ultimate
+        value: recreational-competitive
+      - label: Not Sure Yet
+        value: not-sure
+
+  club:
+    type: text
+    required: true
+    label: "Are you currently associated with any Ultimate Frisbee club? Please specify if yes, write NA if not."
+
+  experience:
+    label: Playing Experience
+    type: radio
+    required: true
+    options:
+      - label: Beginner; I have never played Ultimate Frisbee before and I dont know the rules or how to throw a frisbee
+        value: beginner
+      - label: Recreational; I know the rules and have played a few times but I do not play often
+        value: recreational
+      - label: Intermediate; I know how to throw and catch a frisbee and have played many times
+        value: intermediate
+      - label: Advanced; I am on a club team and can catch and throw with consistency
+        value: advanced
+      - label: Competitive; I have been playing ultimate for 5+ years and I am one of the more experienced players on my club team.
+        value: competitive
+
+
+
+# Weekend or weekday.
+
+# Morning or evening.
+
+# Can pay for grounds, booking, etc. for practices?
+# Free ground or can pay weekly/monthly fees.
+
+# Can you lead practices/pod sessions?
+
+# Interested in playing competitive Ultimate
+# - Yes, No, Maybe
+
+# Can volunteer for recruitment and other such...
+
+# Willing to travel with the team for tournaments, if any.
+
+# How much time are you willing to commit? once a week? twice a week? multiple
+# sessions a week? multiple hours a week?

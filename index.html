@@ -8,78 +8,291 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hyderabad Ultimate Frisbee Interest Form</title>
+    <title>Hyderabad Ultimate Frisbee!</title>
   </head>
   <body>
     <div class="container">
-      <h1>Ultimate Frisbee in Hyderabad!</h1>
-
-      <p>We are trying to gauge interest for Ultimate Frisbee in Hyderabad and
-      checking if we can have regular practices, etc.</p>
-
-      <form
-        method="POST"
-        action="https://script.google.com/macros/s/AKfycbzssTgMFM_KKVWl5dA-jFBpFBVRQTAlmrbDCBCHqM0Nnq9zzB49HpvbP5f7rFPqjd-F/exec"
-        >
-
+      <h1>Hyderabad Ultimate Frisbee!</h1>
+      <p>We are trying to gauge interest for Ultimate Frisbee in Hyderabad and checking if we can have regular practices, etc.</p>
+      <form method="POST" action="https://script.google.com/macros/s/AKfycbzssTgMFM_KKVWl5dA-jFBpFBVRQTAlmrbDCBCHqM0Nnq9zzB49HpvbP5f7rFPqjd-F/exec">
         <div class="form-group row">
-          <label for="inputName" class="col-sm-2 col-form-label">Name</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputName" placeholder="Name" name="Name" required>
+          <label for="inputName" class="col-sm-4 col-form-label">Name</label>
+          <div class="col-sm-8">
+            <input type="text"
+                   class="form-control"
+                   id="inputName"
+                   placeholder="Name"
+                   name="Name"
+                   minlength="2"  required >
           </div>
-        </div>
+       </div>
+       <div class="form-group row">
+          <label for="inputNick" class="col-sm-4 col-form-label">Nick</label>
+          <div class="col-sm-8">
+            <input type="text"
+                   class="form-control"
+                   id="inputNick"
+                   placeholder="Ultimate Nickname (if any)"
+                   name="Nick"
+                      >
+          </div>
+       </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-4 pt-0">Gender</legend>
+      <div class="col-sm-8">
+      
+    <div class="form-check">
+      <input class="form-check-input"
+             type="radio"
+             name="Gender"
+             id="gender-female"
+             value="female"
+             required>
+      <label class="form-check-label" for="gender-female">Female</label>
+    </div>
+    
 
-        <div class="form-group row">
-          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="Email" required>
-          </div>
-        </div>
+    <div class="form-check">
+      <input class="form-check-input"
+             type="radio"
+             name="Gender"
+             id="gender-male"
+             value="male"
+             required>
+      <label class="form-check-label" for="gender-male">Male</label>
+    </div>
+    
 
-        <div class="form-group row">
-          <label for="inputMobile" class="col-sm-2 col-form-label">Mobile</label>
-          <div class="col-sm-10">
-            <input type="number" class="form-control" id="inputMobile" placeholder="Mobile" name="Mobile" min="1000000000" max="9999999999" required>
-          </div>
-        </div>
+    <div class="form-check">
+      <input class="form-check-input"
+             type="radio"
+             name="Gender"
+             id="gender-other"
+             value="other"
+             required>
+      <label class="form-check-label" for="gender-other">Other</label>
+    </div>
+    
 
-        <div class="form-group row">
-          <label for="inputAddress" class="col-sm-2 col-form-label">Address</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputAddress" placeholder="Start Typing Address..." name="Address" required>
+    <div class="form-check">
+      <input class="form-check-input"
+             type="radio"
+             name="Gender"
+             id="gender-secret"
+             value="secret"
+             required>
+      <label class="form-check-label" for="gender-secret">Prefer not to say</label>
+    </div>
+    
+      </div>
+    </div>
+  </fieldset>
+    
+       <div class="form-group row">
+          <label for="inputEmail" class="col-sm-4 col-form-label">Email</label>
+          <div class="col-sm-8">
+            <input type="email"
+                   class="form-control"
+                   id="inputEmail"
+                   placeholder="Email"
+                   name="Email"
+                     required >
           </div>
-        </div>
+       </div>
+       <div class="form-group row">
+          <label for="inputMobile" class="col-sm-4 col-form-label">Mobile</label>
+          <div class="col-sm-8">
+            <input type="number"
+                   class="form-control"
+                   id="inputMobile"
+                   placeholder="Mobile"
+                   name="Mobile"
+                   min="1000000000" max="10000000000" required >
+          </div>
+       </div>
+       <div class="form-group row">
+          <label for="inputLocality" class="col-sm-4 col-form-label">Locality</label>
+          <div class="col-sm-8">
+            <input type="text"
+                   class="form-control"
+                   id="inputLocality"
+                   placeholder="Locality name for map co-ordinates..."
+                   name="Locality"
+                     required >
+          </div>
+       </div>
+       <div class="form-group row">
+          <label for="inputLocation" class="col-sm-4 col-form-label">Location</label>
+          <div class="col-sm-8">
+            <input type="text"
+                   class="form-control"
+                   id="inputLocation"
+                   placeholder="Map co-ordinates"
+                   name="Location"
+                     required readonly>
+          </div>
+       </div>
+       <div class="form-group row">
+          <label for="inputI can travel [x] km for weekly practices/games." class="col-sm-4 col-form-label">I can travel [x] km for weekly practices/games.</label>
+          <div class="col-sm-8">
+            <input type="number"
+                   class="form-control"
+                   id="inputI can travel [x] km for weekly practices/games."
+                   placeholder="I can travel [x] km for weekly practices/games."
+                   name="I can travel [x] km for weekly practices/games."
+                    max="50" required >
+          </div>
+       </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-4 pt-0">I would like to play...</legend>
+      <div class="col-sm-8">
+      
+    <div class="form-check">
+      <input class="form-check-input"
+             type="radio"
+             name="Competitive"
+             id="competitive-recreational"
+             value="recreational"
+             required>
+      <label class="form-check-label" for="competitive-recreational">Only Recreational Ultimate</label>
+    </div>
+    
 
-        <div class="form-group row">
-          <label for="inputLocation" class="col-sm-2 col-form-label">Location</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputLocation" placeholder="0,0" name="Location" required readonly>
-          </div>
-        </div>
+    <div class="form-check">
+      <input class="form-check-input"
+             type="radio"
+             name="Competitive"
+             id="competitive-competitive"
+             value="competitive"
+             required>
+      <label class="form-check-label" for="competitive-competitive">Only Competitive Ultimate</label>
+    </div>
+    
 
-        <div class="form-group row">
-          <div class="col-sm-2">I'm interested in playing ...</div>
-          <div class="col-sm-10">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck1" name="Checkbox" value="cb1">
-              <label class="form-check-label" for="gridCheck1">
-                Pick-up games
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck2" name="Checkbox" value="cb2">
-              <label class="form-check-label" for="gridCheck2">
-                Competitively, the next NCS season
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck2" name="Checkbox" value="cb2">
-              <label class="form-check-label" for="gridCheck2">
-                Competitively, but can't commit for a season
-              </label>
-            </div>
+    <div class="form-check">
+      <input class="form-check-input"
+             type="radio"
+             name="Competitive"
+             id="competitive-recreational-competitive"
+             value="recreational-competitive"
+             required>
+      <label class="form-check-label" for="competitive-recreational-competitive">Both Competitive & Recreational Ultimate</label>
+    </div>
+    
+
+    <div class="form-check">
+      <input class="form-check-input"
+             type="radio"
+             name="Competitive"
+             id="competitive-not-sure"
+             value="not-sure"
+             required>
+      <label class="form-check-label" for="competitive-not-sure">Not Sure Yet</label>
+    </div>
+    
+      </div>
+    </div>
+  </fieldset>
+    
+       <div class="form-group row">
+          <label for="inputAre you currently associated with any Ultimate Frisbee club? Please specify if yes, write NA if not." class="col-sm-4 col-form-label">Are you currently associated with any Ultimate Frisbee club? Please specify if yes, write NA if not.</label>
+          <div class="col-sm-8">
+            <input type="text"
+                   class="form-control"
+                   id="inputAre you currently associated with any Ultimate Frisbee club? Please specify if yes, write NA if not."
+                   placeholder="Are you currently associated with any Ultimate Frisbee club? Please specify if yes, write NA if not."
+                   name="Are you currently associated with any Ultimate Frisbee club? Please specify if yes, write NA if not."
+                     required >
           </div>
-        </div>
+       </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-4 pt-0">Playing Experience</legend>
+      <div class="col-sm-8">
+      
+    <div class="form-check">
+      <input class="form-check-input"
+             type="radio"
+             name="Experience"
+             id="experience-beginner"
+             value="beginner"
+             required>
+      <label class="form-check-label" for="experience-beginner">Beginner; I have never played Ultimate Frisbee before and I dont know the rules or how to throw a frisbee</label>
+    </div>
+    
+
+    <div class="form-check">
+      <input class="form-check-input"
+             type="radio"
+             name="Experience"
+             id="experience-recreational"
+             value="recreational"
+             required>
+      <label class="form-check-label" for="experience-recreational">Recreational; I know the rules and have played a few times but I do not play often</label>
+    </div>
+    
+
+    <div class="form-check">
+      <input class="form-check-input"
+             type="radio"
+             name="Experience"
+             id="experience-intermediate"
+             value="intermediate"
+             required>
+      <label class="form-check-label" for="experience-intermediate">Intermediate; I know how to throw and catch a frisbee and have played many times</label>
+    </div>
+    
+
+    <div class="form-check">
+      <input class="form-check-input"
+             type="radio"
+             name="Experience"
+             id="experience-advanced"
+             value="advanced"
+             required>
+      <label class="form-check-label" for="experience-advanced">Advanced; I am on a club team and can catch and throw with consistency</label>
+    </div>
+    
+
+    <div class="form-check">
+      <input class="form-check-input"
+             type="radio"
+             name="Experience"
+             id="experience-competitive"
+             value="competitive"
+             required>
+      <label class="form-check-label" for="experience-competitive">Competitive; I have been playing ultimate for 5+ years and I am one of the more experienced players on my club team.</label>
+    </div>
+    
+      </div>
+    </div>
+  </fieldset>
+
+        <!-- <div class="form-group row"> -->
+        <!--   <div class="col-sm-2">I'm interested in playing ...</div> -->
+        <!--   <div class="col-sm-10"> -->
+        <!--     <div class="form-check"> -->
+        <!--       <input class="form-check-input" type="checkbox" id="gridCheck1" name="Checkbox" value="cb1"> -->
+        <!--       <label class="form-check-label" for="gridCheck1"> -->
+        <!--         Pick-up games -->
+        <!--       </label> -->
+        <!--     </div> -->
+        <!--     <div class="form-check"> -->
+        <!--       <input class="form-check-input" type="checkbox" id="gridCheck2" name="Checkbox" value="cb2"> -->
+        <!--       <label class="form-check-label" for="gridCheck2"> -->
+        <!--         Competitively, the next NCS season -->
+        <!--       </label> -->
+        <!--     </div> -->
+        <!--     <div class="form-check"> -->
+        <!--       <input class="form-check-input" type="checkbox" id="gridCheck2" name="Checkbox" value="cb2"> -->
+        <!--       <label class="form-check-label" for="gridCheck2"> -->
+        <!--         Competitively, but can't commit for a season -->
+        <!--       </label> -->
+        <!--     </div> -->
+        <!--   </div> -->
+        <!-- </div> -->
 
         <div class="form-group row">
           <div class="col-sm-10">
@@ -89,7 +302,7 @@
 
       </form>
     </div>
-    <script src="js/places.js"></script>
+    <script src="js/places.js?q=1654883272.0798213"></script>
     <script
       async
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjVr3t-JwUlNbrlkon9Xe3ToOySsSkj5s&callback=setupSearchBox&libraries=places">

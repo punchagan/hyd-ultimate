@@ -1,5 +1,5 @@
 const setupSearchBox = () => {
-  const inputBox = document.querySelector("#inputAddress");
+  const inputBox = document.querySelector("#inputLocality");
   const defaultBounds = new google.maps.LatLngBounds(
     new google.maps.LatLng(17.1867065, 78.5185524),
     new google.maps.LatLng(17.1867065, 78.5185524)
